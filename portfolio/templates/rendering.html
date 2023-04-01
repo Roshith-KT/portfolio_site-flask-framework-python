@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Devcrud">
+    <title>Roshith K.T | Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{{url_for('static',filename='vendors/themify-icons/css/themify-icons.css')}}">
+    
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Portfolio</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#work">Work Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#tools">Tools&Tech</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Projects & Works</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <!--<li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary"></a>
+                </li>-->
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Roshith.K.T</span>
+            </h1>
+            <p class="header-subtitle">PYTHON FULL STACK DEVELOPER</p>            
+
+            <button class="btn btn-primary">Go through my profile</button>
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img style="border-radius: 5%;" src="{{url_for('static',filename='imgs/man.jpg')}}" class="about-img" alt="">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">
+                        About Me 
+                        (<a class="social-links" href="https://www.linkedin.com/in/roshith-k-t-b1307010b/" class="link"><i class="ti-linkedin"></i></a>)
+                    </h2>
+
+                    <p>
+                        A Python full stack developer who has expertise in both front-end and back-end web development using Python. Responsible for developing end-to-end web applications, from the user interface (UI) to the database and server-side logic.
+                        <br>Some of the key skills include proficiency in Python programming language, knowledge of web frameworks such as Django, Flask and experience with front-end technologies like HTML, CSS, and JavaScript. Additionally, a full stack developer  with experience in  relational databases like MySQL or PostgreSQL, and non-relational databases like MongoDB.
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4"><a style="text-decoration:none;" href="{{url_for('static',filename='cv/roshith.pdf')}}">Download CV</a></button>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+    <!--Personal Info-->
+   
+    <!--End of personal info-->
+
+   
+    <!-- service section -->
+    <section class="section"  id="work">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">My Work</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{{url_for('static',filename='imgs/toolbox.svg')}}" alt="" class="icon">
+                            <h6 class="title">Web Application Development</h6>
+                            <p class="subtitle">Web App Development with Django and Flask: Crafting Dynamic User Experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{{url_for('static',filename='imgs/analytics.svg')}}" alt="" class="icon">
+                            <h6 class="title">Data Analysis</h6>
+                            <p class="subtitle">Data Analysis: Turning Complex Data into Actionable Insights using Python libraries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{{url_for('static',filename='imgs/responsive.svg')}}" alt="" class="icon">
+                            <h6 class="title">Machine Learning Projects</h6>
+                            <p class="subtitle">Innovative Machine Learning Solutions: Turning Data into Predictive Power.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{{url_for('static',filename='imgs/toolbox.svg')}}" alt="" class="icon">
+                            <h6 class="title">Portfolio Site Development</h6>
+                            <p class="subtitle">Develops Portfolio sites for enhancing the face of Business firm & for an Induvidual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- blog section -->
+    <section class="section" id="blog">
+        <!-- container -->
+        <div class="container text-center">
+            <p class="section-subtitle">Recent Works</p>
+            <h6 class="section-title mb-6">My Projects & Works</h6>
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{{url_for('static',filename='imgs/ecommerce.png')}}" class="blog-card-img" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Ecommerce Project</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Roshith. K.T</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>Our eCommerce web app is the platform for modern consumers looking for a seamless shopping experience. With our cutting-edge technology, customers can shop with confidence knowing that they are getting the best prices, fastest delivery, and highest quality products. Our app is designed to revolutionize the shopping experience, making it easier and more convenient than ever before to find the products you need and make purchases quickly and securely.</p>
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{{url_for('static',filename='imgs/portfolio.png')}}" class="blog-card-img" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Portfolio Site</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Roshith. K.T</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                        <a href="#"><i class="ti-comment"></i> 264</a>
+                    </p>
+                    
+                    <p>A portfolio site is an essential tool for showcasing your skills and accomplishments to potential clients and employers. It is an online platform that presents your work and achievements in an organized and visually appealing manner. A well-designed portfolio site can be a powerful tool for establishing your professional reputation and attracting new business opportunities.</p>
+
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{{url_for('static',filename='imgs/todo.png')}}" class="blog-card-img" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">ToDo App</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Roshith. K.T</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>A todo app is a simple and powerful tool for managing your daily tasks and to-do lists. It helps you stay organized, productive, and focused on the things that matter most. Whether you're a busy professional, a student, or just someone who wants to stay on top of their tasks, a todo app can be an invaluable tool.</p>
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{{url_for('static',filename='imgs/movielisting.png')}}" class="blog-card-img" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Movie Listing Website</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Roshith. K.T</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>A movie listing website is an online platform that provides users with information about movies, including release dates, cast and crew information, reviews, ratings, and more. It's a one-stop destination for movie enthusiasts looking for the latest information on their favorite films and upcoming releases.</p>
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{{url_for('static',filename='imgs/travelagencyvlog.png')}}" class="blog-card-img" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Travel Agency Website</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Roshith. K.T</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>This website is an online platform that allows users to browse and book travel packages, flights, hotels, and other travel-related services. It's a one-stop destination for people looking to plan and book their next vacation or travel adventure.</p>
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{{url_for('static',filename='imgs/bitcoin.png')}}" class="blog-card-img" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Bitcoin Price Prediction</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Roshith. K.T</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>Machine learning models can be used to analyze historical data and identify patterns that may indicate future price movements of bitcoin price, but these predictions are not always accurate and can be affected by unforeseen events and market conditions.</p>
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{{url_for('static',filename='imgs/calculator.png')}}" class="blog-card-img" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Calculator App</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Roshith. K.T</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>Calculator App developed using HTML, CSS & JavaScript which performs Arithmetic Operaions.
+                        A calculator web app is an online tool that allows users to perform mathematical calculations quickly and easily. It's a convenient alternative to traditional calculators, as it can be accessed from any device with an internet connection.
+                    </p>
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{{url_for('static',filename='imgs/tkintersignup.png')}}" class="blog-card-img" alt="">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Tkinter UI</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Roshith. K.T</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>Simple Tkinter User Interface developed using Tkinter Designer Tool.</p>
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+        </div><!-- end of container -->
+    </section><!-- end of blog section -->
+
+    <!-- portfolio section -->
+    <section class="section">
+        <div class="container text-center" id="tools">
+            <p class="section-subtitle">I Work With</p>
+            <h6 class="section-title mb-6">Tools & Technologies used for my Development And Analysis work</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/python.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                <p class="font-weight-normal">Category: Web Development</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/flask.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                <p class="font-weight-normal">Category: Web Development</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/tkinter.jpeg')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Desktop Apps</h5>
+                                <p class="font-weight-normal">Category: GUI Desktop App Development</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/html.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                <p class="font-weight-normal">Category: Web Development</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/css.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                <p class="font-weight-normal">Category: Web Development</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/javascript.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                <p class="font-weight-normal">Category: Web Development</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/numpy.jpg')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Data Analysis</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/pandas.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Data Analysis</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/vscode.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>IDE</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/pycharm.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>IDE</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/anaconda.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>IDE</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/jupyter.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>IDE</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/git.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Version Control Sytem(VCS)</h5>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/github.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>VCS</h5>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/figma.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>UI Development</h5>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+     <!--Personal Info-->
+     <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Education</h6>
+            <!-- row -->
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="card-body">
+                    <div class="h5"><b style="color:#7F5E95;">B. Tech Computer Science & Engineering</b></div>
+                    <p class="category">Sree Narayana Guru College Of Engineering & Technology<sub><i>, Payyannur, Kannur, Kerala</i></sub></p>
+                    <p class="category">University : Kannur University<sub><i>, Kerala</i></sub></p>
+                    <p><i>08/2014 - 05/2018</i></p>
+                </div>
+            </div><br>
+
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="card-body">
+                    <div class="h5"><b style="color:#7F5E95;">Higher Secondary Education</b></div>
+                    <p class="category">A.K.G Memorial Govt. HSS<sub><i>, Pinarayi ,Kannur ,Kerala</i></sub></p>
+                    <p class="category">Board : Kerala State Board</p>
+                    <p><i>06/2012 - 03/2014</i></p>
+                </div>
+            </div><br>
+
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="card-body">
+                    <div class="h5"><b style="color:#7F5E95;">High School Education - 10<sup>th</sup></b></div>
+                    <p class="category">Amrita Vidyalayam<sub><i>, Thalassery, Kannur, Kerala</i></sub></p>
+                    <p class="category">Board : Central Board of Secondary Education</p>
+                    <p><i>06/2011 - 03/2012</i></p>
+                </div>
+            </div><br>
+            <!-- end of row -->
+        </div> 
+    <!--End of personal info-->
+
+    
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left"  id="contact">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Conatct Number</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded"><a href="tel:+91-9074426756">Number : +91-9074426756</a></button>
+                </div>    
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    
+
+    <!-- contact section -->
+    <section class="section">
+        <div class="container text-center">
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required name="name">                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email"requried name="email">                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="message" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>  
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">ROSHITH.K.T</a></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <!--<a href="" class="link"><i class="ti-facebook"></i></a>-->
+                <!--<a href="" class="link"><i class="ti-twitter-alt"></i></a>-->
+                <!--<a href="" class="link"><i class="ti-google"></i></a>-->
+                <!--<a href="" class="link"><i class="ti-pinterest-alt"></i></a>-->
+                <!--<a href="" class="link"><i class="ti-instagram"></i></a>-->
+                <a href="https://join.skype.com/invite/sC951UDRo3Md" class="link"><i class="ti-skype"></i></a>
+                <a href="https://www.linkedin.com/in/roshith-k-t-b1307010b/" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://github.com/Roshith-KT" class="link"><i class="ti-github"></i></a>
+                <a href="mailto:roshithkt@gmail.com" class="link"><i class="ti-email"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="{{url_for('static',filename='vendors/jquery/jquery-3.4.1.js')}}"></script>
+    <script src="{{url_for('static',filename='vendors/bootstrap/bootstrap.bundle.js')}}"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="{{url_for('static',filename='vendors/bootstrap/bootstrap.affix.js')}}"></script>
+
+    <!-- fun js -->
+    <script src="{{url_for('static',filename='js/fun.js')}}"></script>
+
+</body>
+</html>
