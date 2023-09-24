@@ -8,7 +8,7 @@
     <title>Roshith K.T | Portfolio</title>
     <!-- font icons -->
     <link rel="stylesheet" href="{{url_for('static',filename='vendors/themify-icons/css/themify-icons.css')}}">
-    
+
 	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -16,7 +16,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">Portfolio</a>         
+            <a class="logo" href="#">Portfolio</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -45,7 +45,7 @@
                   <div class="hamburger-inner"></div>
                 </div>
             </a>
-        </div>          
+        </div>
     </nav><!-- End of Page Navbar -->
 
     <!-- page header -->
@@ -56,10 +56,10 @@
                 <span class="up">HI!</span>
                 <span class="down">I am Roshith.K.T</span>
             </h1>
-            <p class="header-subtitle">PYTHON FULL STACK DEVELOPER</p>            
+            <p class="header-subtitle">PYTHON FULL STACK DEVELOPER</p>
 
-            <button class="btn btn-primary">Go through my profile</button>
-        </div>              
+            <button class="btn btn-primary" href="#profile">Go through my profile</button>
+        </div>
     </header><!-- end of page header -->
 
     <!-- about section -->
@@ -71,10 +71,10 @@
                 <div class="about-img-holder">
                     <img style="border-radius: 5%;" src="{{url_for('static',filename='imgs/man.jpg')}}" class="about-img" alt="">
                 </div>
-                <div class="about-caption">
+                <div class="about-caption" id="profile">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">
-                        About Me 
+                        About Me
                         (<a class="social-links" href="https://www.linkedin.com/in/roshith-k-t-b1307010b/" class="link"><i class="ti-linkedin"></i></a>)
                     </h2>
 
@@ -82,16 +82,16 @@
                         A Python full stack developer who has expertise in both front-end and back-end web development using Python. Responsible for developing end-to-end web applications, from the user interface (UI) to the database and server-side logic.
                         <br>Some of the key skills include proficiency in Python programming language, knowledge of web frameworks such as Django, Flask and experience with front-end technologies like HTML, CSS, and JavaScript. Additionally, a full stack developer  with experience in  relational databases like MySQL or PostgreSQL, and non-relational databases like MongoDB.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4"><a style="text-decoration:none;" href="{{url_for('static',filename='cv/roshith.pdf')}}">Download CV</a></button>
-                </div>              
+                    <button class="btn-rounded btn btn-outline-primary mt-4"><a style="text-decoration:none;" href="{{url_for('static',filename='cv/roshith.pdf')}}" target="_blank">Download CV</a></button>
+                </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
     <!--Personal Info-->
-   
+
     <!--End of personal info-->
 
-   
+
     <!-- service section -->
     <section class="section"  id="work">
         <div class="container text-center">
@@ -150,16 +150,16 @@
                 <div class="blog-card-header">
                     <img src="{{url_for('static',filename='imgs/ecommerce.png')}}" class="blog-card-img" alt="">
                 </div>
-                <div class="blog-card-body">
+                <div class="blog-card-body" id="ecommerce">
                     <h5 class="blog-card-title">Ecommerce Project</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Roshith. K.T</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
+                        <a href="#about">By: Roshith. K.T</a>
+                        <a href="#ecommerce"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#ecommerce"><i class="ti-comment"></i> 123</a>
                     </p>
                     <p>Our eCommerce web app is the platform for modern consumers looking for a seamless shopping experience. With our cutting-edge technology, customers can shop with confidence knowing that they are getting the best prices, fastest delivery, and highest quality products. Our app is designed to revolutionize the shopping experience, making it easier and more convenient than ever before to find the products you need and make purchases quickly and securely.</p>
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a href="#ecommerce" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
@@ -168,15 +168,15 @@
                 <div class="blog-card-header">
                     <img src="{{url_for('static',filename='imgs/portfolio.png')}}" class="blog-card-img" alt="">
                 </div>
-                <div class="blog-card-body">
+                <div class="blog-card-body" id="portfolio">
                     <h5 class="blog-card-title">Portfolio Site</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Roshith. K.T</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                        <a href="#"><i class="ti-comment"></i> 264</a>
+                        <a href="#about">By: Roshith. K.T</a>
+                        <a href="#portfolio"><i class="ti-heart text-danger"></i> 456</a>
+                        <a href="#portfolio"><i class="ti-comment"></i> 264</a>
                     </p>
-                    
+
                     <p>A portfolio site is an essential tool for showcasing your skills and accomplishments to potential clients and employers. It is an online platform that presents your work and achievements in an organized and visually appealing manner. A well-designed portfolio site can be a powerful tool for establishing your professional reputation and attracting new business opportunities.</p>
 
                     <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
@@ -188,16 +188,16 @@
                 <div class="blog-card-header">
                     <img src="{{url_for('static',filename='imgs/todo.png')}}" class="blog-card-img" alt="">
                 </div>
-                <div class="blog-card-body">
+                <div class="blog-card-body" id="todo">
                     <h5 class="blog-card-title">ToDo App</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Roshith. K.T</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
+                        <a href="about">By: Roshith. K.T</a>
+                        <a href="#todo"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#todo"><i class="ti-comment"></i> 123</a>
                     </p>
                     <p>A todo app is a simple and powerful tool for managing your daily tasks and to-do lists. It helps you stay organized, productive, and focused on the things that matter most. Whether you're a busy professional, a student, or just someone who wants to stay on top of their tasks, a todo app can be an invaluable tool.</p>
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a href="#todo" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
@@ -206,16 +206,16 @@
                 <div class="blog-card-header">
                     <img src="{{url_for('static',filename='imgs/movielisting.png')}}" class="blog-card-img" alt="">
                 </div>
-                <div class="blog-card-body">
+                <div class="blog-card-body" id="movie">
                     <h5 class="blog-card-title">Movie Listing Website</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Roshith. K.T</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
+                        <a href="#about">By: Roshith. K.T</a>
+                        <a href="#movie"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#movie"><i class="ti-comment"></i> 123</a>
                     </p>
                     <p>A movie listing website is an online platform that provides users with information about movies, including release dates, cast and crew information, reviews, ratings, and more. It's a one-stop destination for movie enthusiasts looking for the latest information on their favorite films and upcoming releases.</p>
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a href="#movie" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
@@ -224,16 +224,16 @@
                 <div class="blog-card-header">
                     <img src="{{url_for('static',filename='imgs/travelagencyvlog.png')}}" class="blog-card-img" alt="">
                 </div>
-                <div class="blog-card-body">
+                <div class="blog-card-body" id="travel">
                     <h5 class="blog-card-title">Travel Agency Website</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Roshith. K.T</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
+                        <a href="about">By: Roshith. K.T</a>
+                        <a href="#travel"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#travel"><i class="ti-comment"></i> 123</a>
                     </p>
                     <p>This website is an online platform that allows users to browse and book travel packages, flights, hotels, and other travel-related services. It's a one-stop destination for people looking to plan and book their next vacation or travel adventure.</p>
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a href="#travel" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
@@ -242,36 +242,36 @@
                 <div class="blog-card-header">
                     <img src="{{url_for('static',filename='imgs/bitcoin.png')}}" class="blog-card-img" alt="">
                 </div>
-                <div class="blog-card-body">
+                <div class="blog-card-body" id="bitcoin">
                     <h5 class="blog-card-title">Bitcoin Price Prediction</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Roshith. K.T</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
+                        <a href="#about">By: Roshith. K.T</a>
+                        <a href="#bitcoin"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#bitcoin"><i class="ti-comment"></i> 123</a>
                     </p>
                     <p>Machine learning models can be used to analyze historical data and identify patterns that may indicate future price movements of bitcoin price, but these predictions are not always accurate and can be affected by unforeseen events and market conditions.</p>
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a href="#bitcoin" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="{{url_for('static',filename='imgs/calculator.png')}}" class="blog-card-img" alt="">
+                    <img src="{{url_for('static',filename='imgs/Calculator.png')}}" class="blog-card-img" alt="">
                 </div>
-                <div class="blog-card-body">
+                <div class="blog-card-body" id="calculator">
                     <h5 class="blog-card-title">Calculator App</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Roshith. K.T</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
+                        <a href="#about">By: Roshith. K.T</a>
+                        <a href="#calculator"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#calculator"><i class="ti-comment"></i> 123</a>
                     </p>
                     <p>Calculator App developed using HTML, CSS & JavaScript which performs Arithmetic Operaions.
                         A calculator web app is an online tool that allows users to perform mathematical calculations quickly and easily. It's a convenient alternative to traditional calculators, as it can be accessed from any device with an internet connection.
                     </p>
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a href="#calculator" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
@@ -280,16 +280,16 @@
                 <div class="blog-card-header">
                     <img src="{{url_for('static',filename='imgs/tkintersignup.png')}}" class="blog-card-img" alt="">
                 </div>
-                <div class="blog-card-body">
+                <div class="blog-card-body" id="tkinter">
                     <h5 class="blog-card-title">Tkinter UI</h6>
 
                     <p class="blog-card-caption">
-                        <a href="#">By: Roshith. K.T</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
+                        <a href="#about">By: Roshith. K.T</a>
+                        <a href="#tkinter"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#tkinter"><i class="ti-comment"></i> 123</a>
                     </p>
                     <p>Simple Tkinter User Interface developed using Tkinter Designer Tool.</p>
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                    <a href="#tkinter" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
@@ -305,164 +305,227 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/python.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/python.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Web Designing</h5>
                                 <p class="font-weight-normal">Category: Web Development</p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/flask.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/django.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Framework</h5>
+                                <p class="font-weight-normal">Category: Web Development</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/flask.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Web Designing</h5>
                                 <p class="font-weight-normal">Category: Web Development</p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/tkinter.jpeg')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/tkinter.jpeg')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Desktop Apps</h5>
                                 <p class="font-weight-normal">Category: GUI Desktop App Development</p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/html.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/html.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Web Designing</h5>
                                 <p class="font-weight-normal">Category: Web Development</p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/css.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/css.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Web Designing</h5>
                                 <p class="font-weight-normal">Category: Web Development</p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/javascript.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/javascript.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Web Designing</h5>
                                 <p class="font-weight-normal">Category: Web Development</p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/numpy.jpg')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/msql.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Database</h5>
+                                <p class="font-weight-normal">Category: Web Development</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/mongo.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Database</h5>
+                                <p class="font-weight-normal">Category: Web Development</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/numpy.jpg')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Data Analysis</h5>
                                 <p class="font-weight-normal"></p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/pandas.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/pandas.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Data Analysis</h5>
                                 <p class="font-weight-normal"></p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/vscode.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/vscode.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>IDE</h5>
                                 <p class="font-weight-normal"></p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/pycharm.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/pycharm.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>IDE</h5>
                                 <p class="font-weight-normal"></p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/anaconda.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/anaconda.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>IDE</h5>
                                 <p class="font-weight-normal"></p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/jupyter.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/jupyter.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>IDE</h5>
                                 <p class="font-weight-normal"></p>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/git.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/git.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Version Control Sytem(VCS)</h5>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/github.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/github.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>VCS</h5>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/figma.png')}}" class="img-responsive rounded" alt="" width="100" height="250">    
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/figma.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>UI Development</h5>
-                            </span>                         
-                        </span>                     
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/docker.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Virtual Platform Service</h5>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/firebase.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Hosting Platform</h5>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{url_for('static',filename='imgs/pythonanywhere.png')}}" class="img-responsive rounded" alt="" width="100" height="250">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Hosting Platform</h5>
+                            </span>
+                        </span>
                     </a>
                 </div>
 
@@ -503,10 +566,10 @@
                 </div>
             </div><br>
             <!-- end of row -->
-        </div> 
+        </div>
     <!--End of personal info-->
 
-    
+
 
     <!-- section -->
     <section class="section-sm bg-primary">
@@ -520,12 +583,12 @@
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
                     <button class="btn btn-lg my-font btn-light rounded"><a href="tel:+91-9074426756">Number : +91-9074426756</a></button>
-                </div>    
+                </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of section -->
 
-    
+
 
     <!-- contact section -->
     <section class="section">
@@ -535,25 +598,25 @@
             <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required name="name">                 
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required name="name">
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried name="email">                 
+                        <input type="email" class="form-control" placeholder="Enter Email"requried name="email">
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="message" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
                     </div>
-                </div>  
+                </div>
             </form><!-- end of contact form -->
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
     <!-- footer -->
     <div class="container">
-        <footer class="footer">       
+        <footer class="footer">
             <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">ROSHITH.K.T</a></p>
             <div class="social-links text-right m-auto ml-sm-auto">
                 <!--<a href="" class="link"><i class="ti-facebook"></i></a>-->
@@ -568,7 +631,7 @@
             </div>
         </footer>
     </div> <!-- end of page footer -->
-	
+
 	<!-- core  -->
     <script src="{{url_for('static',filename='vendors/jquery/jquery-3.4.1.js')}}"></script>
     <script src="{{url_for('static',filename='vendors/bootstrap/bootstrap.bundle.js')}}"></script>
